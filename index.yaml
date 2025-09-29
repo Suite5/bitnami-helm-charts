@@ -5,7 +5,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 7.0.9
-    created: "2025-09-29T16:40:33.104571149+03:00"
+    created: "2025-09-29T16:57:44.279865882+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -35,13 +35,47 @@ entries:
     urls:
     - https://bitnamilegacy-hr.s5labs.eu/mongodb-12.1.31.tgz
     version: 12.1.31
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 7.0.9
+    created: "2025-09-29T16:57:44.276302602+03:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
+      it stores data in JSON-like documents. Automated scalability and high-performance.
+      Ideal for developing cloud native applications.
+    digest: 31066f37773e6d91e1f769d097677d580a10878247a345edfc80e315dd20d3b1
+    home: https://github.com/bitnami/charts/tree/master/bitnami/mongodb
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/mongodb
+    - https://mongodb.org
+    urls:
+    - https://bitnamilegacy-hr.s5labs.eu/mongodb-12.1.31-fix.tgz
+    version: 12.1.31-fix
   redis:
   - annotations:
       category: Database
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.8
-    created: "2025-09-29T16:40:33.107821666+03:00"
+    created: "2025-09-29T16:57:44.282995016+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -67,4 +101,4 @@ entries:
     urls:
     - https://bitnamilegacy-hr.s5labs.eu/redis-17.6.0.tgz
     version: 17.6.0
-generated: "2025-09-29T16:40:33.100996558+03:00"
+generated: "2025-09-29T16:57:44.273141769+03:00"
