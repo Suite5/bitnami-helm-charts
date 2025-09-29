@@ -1,12 +1,47 @@
 apiVersion: v1
 entries:
+  mongodb:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 7.0.9
+    created: "2025-09-29T16:40:08.397844252+03:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
+      it stores data in JSON-like documents. Automated scalability and high-performance.
+      Ideal for developing cloud native applications.
+    digest: 149771cca91a8e568d37335e265d03c3ed2401cd8718b2f004cdce67318d7c15
+    home: https://github.com/bitnami/charts/tree/master/bitnami/mongodb
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/mongodb
+    - https://mongodb.org
+    urls:
+    - https://bitnamilegacy-hr.s5labs.eu/mongodb-12.1.31.tgz
+    version: 12.1.31
   redis:
   - annotations:
       category: Database
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.8
-    created: "2025-09-29T15:57:19.033326579+03:00"
+    created: "2025-09-29T16:40:08.401127863+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -32,4 +67,4 @@ entries:
     urls:
     - https://bitnamilegacy-hr.s5labs.eu/redis-17.6.0.tgz
     version: 17.6.0
-generated: "2025-09-29T15:57:19.028602435+03:00"
+generated: "2025-09-29T16:40:08.393747576+03:00"
