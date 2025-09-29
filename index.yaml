@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2022.9.1
-    created: "2025-09-29T18:32:56.609060591+03:00"
+    created: "2025-09-29T18:40:23.894727579+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -38,7 +38,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2022.9.1
-    created: "2025-09-29T18:32:56.606373246+03:00"
+    created: "2025-09-29T18:40:23.892599844+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -72,7 +72,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 7.0.9
-    created: "2025-09-29T18:32:56.615214505+03:00"
+    created: "2025-09-29T18:40:23.901116489+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -106,7 +106,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 7.0.9
-    created: "2025-09-29T18:32:56.611990965+03:00"
+    created: "2025-09-29T18:40:23.89806397+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -142,7 +142,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 15.2.0
-    created: "2025-09-29T18:32:56.620392253+03:00"
+    created: "2025-09-29T18:40:23.907246952+03:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -177,7 +177,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 15.2.0
-    created: "2025-09-29T18:32:56.617587691+03:00"
+    created: "2025-09-29T18:40:23.903744886+03:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -210,10 +210,52 @@ entries:
   redis:
   - annotations:
       category: Database
+      images: |
+        - name: kubectl
+          image: docker.io/bitnami/kubectl:1.29.2-debian-12-r3
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r16
+        - name: redis
+          image: docker.io/bitnami/redis:7.2.4-debian-12-r9
+        - name: redis-exporter
+          image: docker.io/bitnami/redis-exporter:1.58.0-debian-12-r4
+        - name: redis-sentinel
+          image: docker.io/bitnami/redis-sentinel:7.2.4-debian-12-r7
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.2.4
+    created: "2025-09-29T18:40:23.917588731+03:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Redis(R) is an open source, advanced key-value store. It is often
+      referred to as a data structure server since keys can contain strings, hashes,
+      lists, sets and sorted sets.
+    digest: 96522e44b9f238e4e6c0198a608c6835bb691e1502c7f044f9caabea2fc93005
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: redis
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/redis
+    urls:
+    - https://bitnamilegacy-hr.s5labs.eu/redis-19.0.2.tgz
+    version: 19.0.2
+  - annotations:
+      category: Database
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.8
-    created: "2025-09-29T18:32:56.627395932+03:00"
+    created: "2025-09-29T18:40:23.913860367+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -244,7 +286,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.0.9
-    created: "2025-09-29T18:32:56.624205683+03:00"
+    created: "2025-09-29T18:40:23.910419933+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -270,4 +312,4 @@ entries:
     urls:
     - https://bitnamilegacy-hr.s5labs.eu/redis-17.6.0.tgz
     version: 17.6.0
-generated: "2025-09-29T18:32:56.604166527+03:00"
+generated: "2025-09-29T18:40:23.889818573+03:00"
