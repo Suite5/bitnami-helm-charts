@@ -3,9 +3,49 @@ entries:
   minio:
   - annotations:
       category: Infrastructure
+      images: |
+        - name: minio
+          image: docker.io/bitnami/minio:2024.8.3-debian-12-r1
+        - name: minio-client
+          image: docker.io/bitnami/minio-client:2024.7.31-debian-12-r1
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r27
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2024.8.3
+    created: "2025-10-06T19:56:33.451130677+03:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MinIO(R) is an object storage server, compatible with Amazon S3 cloud
+      storage service, mainly used for storing unstructured data (such as photos,
+      videos, log files, etc.).
+    digest: 6b4d6332d525e735b217513e9b21016d6ebbbb37a0f275e2544e944c1db49c1d
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/minio/img/minio-stack-220x234.png
+    keywords:
+    - minio
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: minio
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/minio
+    urls:
+    - https://bitnamilegacy-hr.s5labs.eu/minio-14.6.33.tgz
+    version: 14.6.33
+  - annotations:
+      category: Infrastructure
     apiVersion: v2
     appVersion: 2022.9.1
-    created: "2025-09-30T16:05:14.693487936+03:00"
+    created: "2025-10-06T19:56:33.449012039+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -38,7 +78,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2022.9.1
-    created: "2025-09-30T16:05:14.690781277+03:00"
+    created: "2025-10-06T19:56:33.444977948+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -70,9 +110,54 @@ entries:
   mongodb:
   - annotations:
       category: Database
+      images: |
+        - name: kubectl
+          image: docker.io/bitnami/kubectl:1.31.1-debian-12-r2
+        - name: mongodb
+          image: docker.io/bitnami/mongodb:7.0.14-debian-12-r3
+        - name: mongodb-exporter
+          image: docker.io/bitnami/mongodb-exporter:0.41.0-debian-12-r0
+        - name: nginx
+          image: docker.io/bitnami/nginx:1.27.1-debian-12-r5
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r30
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.0.14
+    created: "2025-10-06T19:56:33.462001625+03:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
+      it stores data in JSON-like documents. Automated scalability and high-performance.
+      Ideal for developing cloud native applications.
+    digest: f917ca90714081a0e1a9b43d0334144d86be0a2d8c23e009eb9fe8af77a0a3f1
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mongodb
+    urls:
+    - https://bitnamilegacy-hr.s5labs.eu/mongodb-15.6.26.tgz
+    version: 15.6.26
+  - annotations:
+      category: Database
     apiVersion: v2
     appVersion: 7.0.9
-    created: "2025-09-30T16:05:14.699931103+03:00"
+    created: "2025-10-06T19:56:33.457547962+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -106,7 +191,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 7.0.9
-    created: "2025-09-30T16:05:14.6965256+03:00"
+    created: "2025-10-06T19:56:33.454562807+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -142,7 +227,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 15.2.0
-    created: "2025-09-30T16:05:14.705198043+03:00"
+    created: "2025-10-06T19:56:33.467238274+03:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -177,7 +262,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 15.2.0
-    created: "2025-09-30T16:05:14.702320811+03:00"
+    created: "2025-10-06T19:56:33.464649117+03:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -224,7 +309,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.4
-    created: "2025-09-30T16:05:14.708730883+03:00"
+    created: "2025-10-06T19:56:33.475597924+03:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -292,6 +377,37 @@ entries:
     urls:
     - https://bitnamilegacy-hr.s5labs.eu/redis-19.0.2.tgz
     version: 19.0.2
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.0.11
+    created: "2025-10-06T19:56:33.471257432+03:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Redis(R) is an open source, advanced key-value store. It is often
+      referred to as a data structure server since keys can contain strings, hashes,
+      lists, sets and sorted sets.
+    digest: b441e2bd21d49b21f27cbbfa0d7b2a2a125edf0b1400b694e0dda1344288dba4
+    home: https://github.com/bitnami/charts/tree/main/bitnami/redis
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: redis
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/redis
+    urls:
+    - https://bitnamilegacy-hr.s5labs.eu/redis-17.9.5.tgz
+    version: 17.9.5
   - annotations:
       category: Database
       licenses: Apache-2.0
@@ -390,7 +506,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.0.9
-    created: "2025-09-30T16:05:14.712190687+03:00"
+    created: "2025-10-06T19:56:33.478894461+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -416,4 +532,4 @@ entries:
     urls:
     - https://bitnamilegacy-hr.s5labs.eu/redis-6.0.9.tgz
     version: 6.0.9
-generated: "2025-09-30T16:05:14.688333813+03:00"
+generated: "2025-10-06T19:56:33.432421998+03:00"
