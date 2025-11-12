@@ -13,7 +13,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2024.8.3
-    created: "2025-11-12T13:55:23.030357185+02:00"
+    created: "2025-11-12T14:13:37.748973593+02:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -45,7 +45,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2022.9.1
-    created: "2025-11-12T13:55:23.02767503+02:00"
+    created: "2025-11-12T14:13:37.746684498+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -78,7 +78,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2022.9.1
-    created: "2025-11-12T13:55:23.025659335+02:00"
+    created: "2025-11-12T14:13:37.744597089+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -124,7 +124,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.14
-    created: "2025-11-12T13:55:23.040452206+02:00"
+    created: "2025-11-12T14:13:37.759621475+02:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -134,7 +134,7 @@ entries:
     description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
       it stores data in JSON-like documents. Automated scalability and high-performance.
       Ideal for developing cloud native applications.
-    digest: 9296a1f8906d574dc4f2381b3266fea9428ee65c287e5c32d1ed1afdea232380
+    digest: 39daf1e2d5a8657c412824a48323edfd77c8f343b7a210cfaf151467ee22cd00
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
     keywords:
@@ -157,7 +157,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 7.0.9
-    created: "2025-11-12T13:55:23.036395685+02:00"
+    created: "2025-11-12T14:13:37.755391526+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -191,7 +191,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 7.0.9
-    created: "2025-11-12T13:55:23.033446679+02:00"
+    created: "2025-11-12T14:13:37.752431568+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -227,7 +227,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 15.2.0
-    created: "2025-11-12T13:55:23.045799681+02:00"
+    created: "2025-11-12T14:13:37.764511234+02:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -262,7 +262,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 15.2.0
-    created: "2025-11-12T13:55:23.042810264+02:00"
+    created: "2025-11-12T14:13:37.762023285+02:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -308,7 +308,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.5.0
-    created: "2025-11-12T13:55:23.048970367+02:00"
+    created: "2025-11-12T14:13:37.767740645+02:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -351,7 +351,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.5.0
-    created: "2025-11-12T13:55:23.062655747+02:00"
+    created: "2025-11-12T14:13:37.781792872+02:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -396,7 +396,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.4
-    created: "2025-11-12T13:55:23.056373846+02:00"
+    created: "2025-11-12T14:13:37.775396394+02:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -469,7 +469,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.11
-    created: "2025-11-12T13:55:23.052778375+02:00"
+    created: "2025-11-12T14:13:37.770789256+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -593,7 +593,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.0.9
-    created: "2025-11-12T13:55:23.059827124+02:00"
+    created: "2025-11-12T14:13:37.778498598+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -619,4 +619,4 @@ entries:
     urls:
     - https://bitnamilegacy-hr.s5labs.eu/redis-6.0.9.tgz
     version: 6.0.9
-generated: "2025-11-12T13:55:23.022876329+02:00"
+generated: "2025-11-12T14:13:37.741688137+02:00"

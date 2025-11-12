@@ -1203,7 +1203,7 @@ persistence:
   ## @param persistence.mountPath Path to mount the volume at
   ## MongoDB(&reg;) images.
   ##
-  mountPath: /bitnamilegacy/mongodb
+  mountPath: /bitnami/mongodb
   ## @param persistence.subPath Subdirectory of the volume to mount at
   ## and one PV for multiple services.
   ##
@@ -2207,7 +2207,7 @@ hidden:
     annotations: {}
     ## @param hidden.persistence.mountPath The path the volume will be mounted at, useful when using different MongoDB(&reg;) images.
     ##
-    mountPath: /bitnamilegacy/mongodb
+    mountPath: /bitnami/mongodb
     ## @param hidden.persistence.subPath The subdirectory of the volume to mount to, useful in dev environments
     ## and one PV for multiple services.
     ##
