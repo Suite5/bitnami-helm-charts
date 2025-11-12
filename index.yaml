@@ -13,7 +13,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2024.8.3
-    created: "2025-10-06T19:56:33.451130677+03:00"
+    created: "2025-11-12T13:34:45.925385073+02:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -45,7 +45,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2022.9.1
-    created: "2025-10-06T19:56:33.449012039+03:00"
+    created: "2025-11-12T13:34:45.922905219+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -78,7 +78,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2022.9.1
-    created: "2025-10-06T19:56:33.444977948+03:00"
+    created: "2025-11-12T13:34:45.918169882+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -124,7 +124,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.14
-    created: "2025-10-06T19:56:33.462001625+03:00"
+    created: "2025-11-12T13:34:45.936598468+02:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -157,7 +157,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 7.0.9
-    created: "2025-10-06T19:56:33.457547962+03:00"
+    created: "2025-11-12T13:34:45.932028897+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -191,7 +191,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 7.0.9
-    created: "2025-10-06T19:56:33.454562807+03:00"
+    created: "2025-11-12T13:34:45.928502657+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -227,7 +227,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 15.2.0
-    created: "2025-10-06T19:56:33.467238274+03:00"
+    created: "2025-11-12T13:34:45.94190426+02:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -262,7 +262,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 15.2.0
-    created: "2025-10-06T19:56:33.464649117+03:00"
+    created: "2025-11-12T13:34:45.939336301+02:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -292,6 +292,93 @@ entries:
     urls:
     - https://bitnamilegacy-hr.s5labs.eu/postgresql-12.4.2.tgz
     version: 12.4.2
+  prometheus:
+  - annotations:
+      category: Analytics
+      images: |
+        - name: alertmanager
+          image: docker.io/bitnami/alertmanager:0.28.1-debian-12-r15
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r50
+        - name: prometheus
+          image: docker.io/bitnami/prometheus:3.5.0-debian-12-r3
+        - name: thanos
+          image: docker.io/bitnami/thanos:0.39.2-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 3.5.0
+    created: "2025-11-12T13:34:45.945288228+02:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Prometheus is an open source monitoring and alerting system. It enables
+      sysadmins to monitor their infrastructures by collecting metrics from configured
+      targets at given intervals.
+    digest: 78f429d99c34f2d20e9349da397ff6505c0403157a334bb883f0573940ebc13e
+    home: https://github.com/prometheus/prometheus
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/prometheus/img/prometheus-stack-220x234.png
+    keywords:
+    - prometheus
+    - monitoring
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: prometheus
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/prometheus
+    - https://github.com/bitnami/containers/tree/main/bitnami/prometheus
+    - https://github.com/prometheus/prometheus
+    - https://github.com/prometheus-community/helm-charts
+    urls:
+    - https://bitnamilegacy-hr.s5labs.eu/prometheus-2.1.23.tgz
+    version: 2.1.23
+  - annotations:
+      category: Analytics
+      images: |
+        - name: alertmanager
+          image: docker.io/bitnami/alertmanager:0.28.1-debian-12-r15
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r50
+        - name: prometheus
+          image: docker.io/bitnami/prometheus:3.5.0-debian-12-r3
+        - name: thanos
+          image: docker.io/bitnami/thanos:0.39.2-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 3.5.0
+    created: "2025-11-12T13:34:45.958793209+02:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Prometheus is an open source monitoring and alerting system. It enables
+      sysadmins to monitor their infrastructures by collecting metrics from configured
+      targets at given intervals.
+    digest: 6615d15be2047bf7619b9162ebcbeff14e4d740708bef5a4b0c2d3e3b60bafdc
+    home: https://github.com/prometheus/prometheus
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/prometheus/img/prometheus-stack-220x234.png
+    keywords:
+    - prometheus
+    - monitoring
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: prometheus
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/prometheus
+    - https://github.com/bitnami/containers/tree/main/bitnami/prometheus
+    - https://github.com/prometheus/prometheus
+    - https://github.com/prometheus-community/helm-charts
+    urls:
+    - https://bitnamilegacy-hr.s5labs.eu/charts/prometheus-2.1.23.tgz
+    version: 2.1.23
   redis:
   - annotations:
       category: Database
@@ -309,7 +396,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.4
-    created: "2025-10-06T19:56:33.475597924+03:00"
+    created: "2025-11-12T13:34:45.95261679+02:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -382,7 +469,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.11
-    created: "2025-10-06T19:56:33.471257432+03:00"
+    created: "2025-11-12T13:34:45.948409035+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -506,7 +593,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.0.9
-    created: "2025-10-06T19:56:33.478894461+03:00"
+    created: "2025-11-12T13:34:45.955999234+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -532,4 +619,4 @@ entries:
     urls:
     - https://bitnamilegacy-hr.s5labs.eu/redis-6.0.9.tgz
     version: 6.0.9
-generated: "2025-10-06T19:56:33.432421998+03:00"
+generated: "2025-11-12T13:34:45.905473187+02:00"
