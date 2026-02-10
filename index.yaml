@@ -13,7 +13,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2024.8.3
-    created: "2025-11-12T14:13:37.748973593+02:00"
+    created: "2026-02-10T21:22:50.081158532+02:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -45,7 +45,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2022.9.1
-    created: "2025-11-12T14:13:37.746684498+02:00"
+    created: "2026-02-10T21:22:50.078764748+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -78,7 +78,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2022.9.1
-    created: "2025-11-12T14:13:37.744597089+02:00"
+    created: "2026-02-10T21:22:50.075614003+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -124,7 +124,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.14
-    created: "2025-11-12T14:13:37.759621475+02:00"
+    created: "2026-02-10T21:22:50.092002788+02:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -157,7 +157,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 7.0.9
-    created: "2025-11-12T14:13:37.755391526+02:00"
+    created: "2026-02-10T21:22:50.087650366+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -191,7 +191,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 7.0.9
-    created: "2025-11-12T14:13:37.752431568+02:00"
+    created: "2026-02-10T21:22:50.084247271+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -221,13 +221,46 @@ entries:
     urls:
     - https://bitnamilegacy-hr.s5labs.eu/mongodb-12.1.31.tgz
     version: 12.1.31
+  ollama:
+  - annotations:
+      artifacthub.io/category: ai-machine-learning
+      artifacthub.io/changes: |
+        - kind: changed
+          description: upgrade app version to v0.15.6
+          links:
+            - name: Ollama release v0.15.6
+              url: https://github.com/ollama/ollama/releases/tag/v0.15.6
+    apiVersion: v2
+    appVersion: 0.15.6
+    created: "2026-02-10T21:22:50.09279951+02:00"
+    description: Get up and running with large language models locally.
+    digest: 7481964096efd293b5c64a8f9927d09e76711fa121e2ba512b5624d3559629df
+    home: https://ollama.ai/
+    icon: https://ollama.ai/public/ollama.png
+    keywords:
+    - ai
+    - llm
+    - llama
+    - mistral
+    kubeVersion: ^1.16.0-0
+    maintainers:
+    - email: contact@otwld.com
+      name: OTWLD
+    name: ollama
+    sources:
+    - https://github.com/ollama/ollama
+    - https://github.com/otwld/ollama-helm
+    type: application
+    urls:
+    - https://bitnamilegacy-hr.s5labs.eu/ollama-1.42.0.tgz
+    version: 1.42.0
   postgresql:
   - annotations:
       category: Database
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 15.2.0
-    created: "2025-11-12T14:13:37.764511234+02:00"
+    created: "2026-02-10T21:22:50.098782879+02:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -262,7 +295,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 15.2.0
-    created: "2025-11-12T14:13:37.762023285+02:00"
+    created: "2026-02-10T21:22:50.095395504+02:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -308,7 +341,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.5.0
-    created: "2025-11-12T14:13:37.767740645+02:00"
+    created: "2026-02-10T21:22:50.102200987+02:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -351,7 +384,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.5.0
-    created: "2025-11-12T14:13:37.781792872+02:00"
+    created: "2026-02-10T21:22:50.116216397+02:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -396,7 +429,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.4
-    created: "2025-11-12T14:13:37.775396394+02:00"
+    created: "2026-02-10T21:22:50.109455829+02:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -469,7 +502,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.11
-    created: "2025-11-12T14:13:37.770789256+02:00"
+    created: "2026-02-10T21:22:50.105491991+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -593,7 +626,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.0.9
-    created: "2025-11-12T14:13:37.778498598+02:00"
+    created: "2026-02-10T21:22:50.113071942+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -619,4 +652,4 @@ entries:
     urls:
     - https://bitnamilegacy-hr.s5labs.eu/redis-6.0.9.tgz
     version: 6.0.9
-generated: "2025-11-12T14:13:37.741688137+02:00"
+generated: "2026-02-10T21:22:50.073124703+02:00"
