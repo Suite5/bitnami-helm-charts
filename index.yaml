@@ -13,7 +13,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2024.8.3
-    created: "2026-02-10T21:22:50.081158532+02:00"
+    created: "2026-08-20T19:38:47.310952601+03:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -45,7 +45,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2022.9.1
-    created: "2026-02-10T21:22:50.078764748+02:00"
+    created: "2026-08-20T19:38:47.308661753+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -78,7 +78,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2022.9.1
-    created: "2026-02-10T21:22:50.075614003+02:00"
+    created: "2026-08-20T19:38:47.306139887+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -124,7 +124,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.14
-    created: "2026-02-10T21:22:50.092002788+02:00"
+    created: "2026-08-20T19:38:47.321797619+03:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -157,7 +157,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 7.0.9
-    created: "2026-02-10T21:22:50.087650366+02:00"
+    created: "2026-08-20T19:38:47.317458177+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -191,7 +191,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 7.0.9
-    created: "2026-02-10T21:22:50.084247271+02:00"
+    created: "2026-08-20T19:38:47.314393387+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -232,7 +232,7 @@ entries:
               url: https://github.com/ollama/ollama/releases/tag/v0.15.6
     apiVersion: v2
     appVersion: 0.15.6
-    created: "2026-02-10T21:22:50.09279951+02:00"
+    created: "2026-08-20T19:38:47.322549203+03:00"
     description: Get up and running with large language models locally.
     digest: 7481964096efd293b5c64a8f9927d09e76711fa121e2ba512b5624d3559629df
     home: https://ollama.ai/
@@ -260,7 +260,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 15.2.0
-    created: "2026-02-10T21:22:50.098782879+02:00"
+    created: "2026-08-20T19:38:47.327929744+03:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -295,7 +295,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 15.2.0
-    created: "2026-02-10T21:22:50.095395504+02:00"
+    created: "2026-08-20T19:38:47.325070666+03:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -341,7 +341,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-02-10T21:22:50.102200987+02:00"
+    created: "2026-08-20T19:38:47.331178792+03:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -384,7 +384,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-02-10T21:22:50.116216397+02:00"
+    created: "2026-08-20T19:38:47.345847074+03:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -429,7 +429,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.4
-    created: "2026-02-10T21:22:50.109455829+02:00"
+    created: "2026-08-20T19:38:47.338687297+03:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -457,52 +457,10 @@ entries:
     version: 19.0.3
   - annotations:
       category: Database
-      images: |
-        - name: kubectl
-          image: docker.io/bitnami/kubectl:1.29.2-debian-12-r3
-        - name: os-shell
-          image: docker.io/bitnami/os-shell:12-debian-12-r16
-        - name: redis
-          image: docker.io/bitnami/redis:7.2.4-debian-12-r9
-        - name: redis-exporter
-          image: docker.io/bitnami/redis-exporter:1.58.0-debian-12-r4
-        - name: redis-sentinel
-          image: docker.io/bitnami/redis-sentinel:7.2.4-debian-12-r7
-      licenses: Apache-2.0
-    apiVersion: v2
-    appVersion: 7.2.4
-    created: "2025-09-30T15:49:24.288201092+03:00"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: Redis(R) is an open source, advanced key-value store. It is often
-      referred to as a data structure server since keys can contain strings, hashes,
-      lists, sets and sorted sets.
-    digest: 96522e44b9f238e4e6c0198a608c6835bb691e1502c7f044f9caabea2fc93005
-    home: https://bitnami.com
-    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
-    keywords:
-    - redis
-    - keyvalue
-    - database
-    maintainers:
-    - name: VMware, Inc.
-      url: https://github.com/bitnami/charts
-    name: redis
-    sources:
-    - https://github.com/bitnami/charts/tree/main/bitnami/redis
-    urls:
-    - https://bitnamilegacy-hr.s5labs.eu/redis-19.0.2.tgz
-    version: 19.0.2
-  - annotations:
-      category: Database
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.11
-    created: "2026-02-10T21:22:50.105491991+02:00"
+    created: "2026-08-20T19:38:47.334599953+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -532,101 +490,8 @@ entries:
       category: Database
       licenses: Apache-2.0
     apiVersion: v2
-    appVersion: 7.0.8
-    created: "2025-09-30T15:49:24.284341715+03:00"
-    dependencies:
-    - name: common
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: Redis(R) is an open source, advanced key-value store. It is often
-      referred to as a data structure server since keys can contain strings, hashes,
-      lists, sets and sorted sets.
-    digest: 8835b320cecd043f519f9abb1ce5ae8dd69e2693ab4fc9ed057c21304dc8d2d3
-    home: https://github.com/bitnami/charts/tree/main/bitnami/redis
-    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
-    keywords:
-    - redis
-    - keyvalue
-    - database
-    maintainers:
-    - name: Bitnami
-      url: https://github.com/bitnami/charts
-    name: redis
-    sources:
-    - https://github.com/bitnami/containers/tree/main/bitnami/redis
-    urls:
-    - https://bitnamilegacy-hr.s5labs.eu/redis-17.7.1.tgz
-    version: 17.7.1
-  - annotations:
-      category: Database
-      licenses: Apache-2.0
-    apiVersion: v2
     appVersion: 6.0.9
-    created: "2025-09-30T15:49:24.281211308+03:00"
-    dependencies:
-    - name: common
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: Redis(R) is an open source, advanced key-value store. It is often
-      referred to as a data structure server since keys can contain strings, hashes,
-      lists, sets and sorted sets.
-    digest: 62b83cf6d50c34beeccbe627ab55391613dd55ec90970fe502aa3123e8675787
-    home: https://github.com/bitnami/charts/tree/main/bitnami/redis
-    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
-    keywords:
-    - redis
-    - keyvalue
-    - database
-    maintainers:
-    - name: Bitnami
-      url: https://github.com/bitnami/charts
-    name: redis
-    sources:
-    - https://github.com/bitnami/containers/tree/main/bitnami/redis
-    urls:
-    - https://bitnamilegacy-hr.s5labs.eu/redis-17.6.1.tgz
-    version: 17.6.1
-  - annotations:
-      category: Database
-      licenses: Apache-2.0
-    apiVersion: v2
-    appVersion: 6.0.9
-    created: "2025-09-30T15:49:24.277441648+03:00"
-    dependencies:
-    - name: common
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: Redis(R) is an open source, advanced key-value store. It is often
-      referred to as a data structure server since keys can contain strings, hashes,
-      lists, sets and sorted sets.
-    digest: 7fbb7f7cc6fa2b9fec898f7bc531d83145c771cc8ec112006aeea39a08835aab
-    home: https://github.com/bitnami/charts/tree/main/bitnami/redis
-    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
-    keywords:
-    - redis
-    - keyvalue
-    - database
-    maintainers:
-    - name: Bitnami
-      url: https://github.com/bitnami/charts
-    name: redis
-    sources:
-    - https://github.com/bitnami/containers/tree/main/bitnami/redis
-    urls:
-    - https://bitnamilegacy-hr.s5labs.eu/redis-17.6.0.tgz
-    version: 17.6.0
-  - annotations:
-      category: Database
-      licenses: Apache-2.0
-    apiVersion: v2
-    appVersion: 6.0.9
-    created: "2026-02-10T21:22:50.113071942+02:00"
+    created: "2026-08-20T19:38:47.341895566+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -652,4 +517,27 @@ entries:
     urls:
     - https://bitnamilegacy-hr.s5labs.eu/redis-6.0.9.tgz
     version: 6.0.9
-generated: "2026-02-10T21:22:50.073124703+02:00"
+  traceway:
+  - apiVersion: v2
+    appVersion: 1.9.17
+    created: "2026-08-20T19:38:47.342312441+03:00"
+    description: Error tracking and monitoring for Go applications
+    digest: 8045f4e120e6af64aa44590f35ccda8a4f2af17a77b5453115c36db284042a91
+    home: https://tracewayapp.com
+    keywords:
+    - monitoring
+    - error-tracking
+    - observability
+    - apm
+    - go
+    maintainers:
+    - name: Traceway
+      url: https://tracewayapp.com
+    name: traceway
+    sources:
+    - https://github.com/tracewayapp/traceway
+    type: application
+    urls:
+    - https://bitnamilegacy-hr.s5labs.eu/traceway-1.9.17.tgz
+    version: 1.9.17
+generated: "2026-08-20T19:38:47.303903575+03:00"
